@@ -1,18 +1,18 @@
 # ******************************************************************
 #
-#  Author				: T0nyDev
-#  Date					: 04 December 2021
-#  Required Input 		: None
-#  Required Input 		: None
-#  Optionnnal Input 	: None
-#  Description			: Script to install Apps with winget tool
-#  ******************************************************************
+#  Author               : T0nyDev
+#  Date                 : 04 December 2021
+#  Required Input       : None
+#  Required Input       : None
+#  Optionnnal Input     : None
+#  Description          : Script to install Apps with winget tool
+#  *****************************************************************
 
 # ******************************************************************
-# Version				: X.C
-# Author				: none
-# Date					: 
-# Modification			:
+# Version               : X.C
+# Author                : none
+# Date                  : 
+# Modification          :
 # ******************************************************************
 
 (
@@ -22,11 +22,12 @@
     "Git.Git",
     "Microsoft.VisualStudioCode",
     "Postman.Postman",
-	"videolan.vlc",
-	"winmerge.winmerge",
-	"notepad++.notepad++",
-	"Microsoft.PowerToys",
-	"Sysinternals"
+    "videolan.vlc",
+    "winmerge.winmerge",
+    "notepad++.notepad++",
+    "Microsoft.PowerToys",
+    "WinSCP.WinSCP",
+    "Sysinternals"
 ) | ForEach-Object {
 
 	if (winget install -e --id $_) {
